@@ -26,8 +26,9 @@ if menu_input == 1:
     print("Option 1")
 elif menu_input == 2:
     print("Getting info of:",user_input)
-    print("Age: "+str(get_age)+"\nAddress: "+str(get_address)+"\nContact#: "+str(get_contact))
-
+    print("Age: "+str(get_age)+
+    "\nAddress: "+str(get_address)+"\nContact#: "+
+    str(get_contact))
 elif menu_input == 3:
     print("Option 3")
 else:
