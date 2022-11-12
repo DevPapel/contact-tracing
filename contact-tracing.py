@@ -3,6 +3,13 @@
 
 def main():
     if menu_input == 1:
+        get_length = len(contact_list)
+        print("\nShowing all the person that is saved on this contact tracing program"+
+            "\nTotal Results:", get_length,"\n")
+        for i in contact_list:
+            print(" ●",i)
+
+    elif menu_input == 2:
         user_input1 = input("Enter the Full name: ")
         while user_input1 in contact_list:
             print(user_input1,"is already in the contact list")
@@ -15,7 +22,7 @@ def main():
             "Address":user_input3,
             "Contact#":user_input4
         }
-    elif menu_input == 2:
+    elif menu_input == 3:
         user_input = input("Enter the Full name: ")
         get_age = contact_list[user_input]["Age"]
         get_address = contact_list[user_input]["Address"]
@@ -24,7 +31,7 @@ def main():
         print("Age: "+str(get_age)+
         "\nAddress: "+str(get_address)+"\nContact#: "+
         str(get_contact))
-    elif menu_input == 3:
+    elif menu_input == 4:
         print("Thank you for using this program! Have a nice day")
         exit()
     else:
