@@ -39,9 +39,10 @@ def cont():
 
 def showMenu():
     print("\n▁▂▃▄▅▆▇█ Main Menu █▇▆▅▄▃▂▁")
-    print("\n   [1] ➪  Add an Item"+
-"\n   [2] ➪  Search"+
-"\n   [3] ➪  Exit\n")
+    print("\n   [1] ➪  Show Saved Contacts"+
+        "\n   [1] ➪  Add an Item"+
+        "\n   [2] ➪  Search"+
+        "\n   [3] ➪  Exit\n")
     print("▁▂▃▄▅▆▇█████████████▇▆▅▄▃▂▁")
 
 
