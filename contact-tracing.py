@@ -36,6 +36,8 @@ def main():
         "\nAddress: "+str(get_address)+"\nContact#: "+
         str(get_contact))
     elif menu_input == 4:
+        print("Output 4")
+    elif menu_input == 5:
         print("Thank you for using this program! Have a nice day")
         exit()
     else:
