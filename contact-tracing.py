@@ -38,6 +38,13 @@ def cont():
     if continue_prog != "Y":
         exit()
 
+def showMenu():
+    print("Menu:"+
+"\n1 -> Add an Item"+
+"\n2 -> Search"+
+"\n3 -> Exit")
+
+
 
 
 contact_list = {
@@ -48,12 +55,10 @@ contact_list = {
         }
 }
 
-print("Menu:"+
-"\n1 -> Add an Item"+
-"\n2 -> Search"+
-"\n3 -> Exit")
+
 
 while True:
+    showMenu()
     menu_input = int(input("What do you want to do? "))
     main()
 
