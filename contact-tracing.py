@@ -19,5 +19,6 @@ print("Menu:"+
 "\n2 -> Search"+
 "\n3 -> Exit")
 
+user_input = int(input("What do you want to do? "))
 
 
