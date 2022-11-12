@@ -13,6 +13,11 @@ get_age = contact_list["Jeferson Tadios"]["Age"]
 get_address = contact_list["Jeferson Tadios"]["Address"]
 get_contact = contact_list["Jeferson Tadios"]["Contact#"]
 
-print (get_age)
-print (get_address)
-print (get_contact)
+
+print("Menu:"+
+"\n1 -> Add an Item"+
+"\n2 -> Search"+
+"\n3 -> Exit")
+
+
+
