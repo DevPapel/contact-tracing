@@ -23,7 +23,6 @@ def main():
             "Contact#":user_input4
         }
 
-
     elif menu_input == 3:
         user_input = input("Enter the Full name: ")
         while contact_list.get(user_input) is None:
@@ -37,8 +36,6 @@ def main():
         print("Age: "+str(get_age)+
         "\nAddress: "+str(get_address)+"\nContact#: "+
         str(get_contact))
-
-
 
     elif menu_input == 4:
         user_input1 = input("Enter the Full name of the information you want to change: ")
@@ -65,24 +62,21 @@ def main():
         else:
             print("\nWrong Option! Editing Cancelled")
 
-
-
-
-
     elif menu_input == 5:
         print("Thank you for using this program! Have a nice day")
         exit()
 
-
     else:
         print("Invalid Option")
     cont()
+
 
 def cont():
     print("")
     continue_prog = input("Do you want to continue? [Y/N]: ").upper()
     if continue_prog != "Y":
         exit()
+
 
 def showMenu():
     print("\n▁▂▃▄▅▆▇█ Main Menu █▇▆▅▄▃▂▁")
@@ -92,8 +86,6 @@ def showMenu():
         "\n [4] ➪  Edit Information"+
         "\n [5] ➪  Exit\n")
     print("▁▂▃▄▅▆▇█████████████▇▆▅▄▃▂▁")
-
-
 
 
 contact_list = {
