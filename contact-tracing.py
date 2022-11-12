@@ -9,23 +9,26 @@ contact_list = {
         }
 }
 
-get_age = contact_list["Jeferson Tadios"]["Age"]
-get_address = contact_list["Jeferson Tadios"]["Address"]
-get_contact = contact_list["Jeferson Tadios"]["Contact#"]
-
-
 print("Menu:"+
 "\n1 -> Add an Item"+
 "\n2 -> Search"+
 "\n3 -> Exit")
 
-user_input = int(input("What do you want to do? "))
+menu_input = int(input("What do you want to do? "))
+user_input = input("Enter the Full name: ")
 
-if user_input == 1:
+get_age = contact_list[user_input]["Age"]
+get_address = contact_list[user_input]["Address"]
+get_contact = contact_list[user_input]["Contact#"]
+
+
+if menu_input == 1:
     print("Option 1")
-elif user_input == 2:
-    print("Option 2")
-elif user_input == 3:
+elif menu_input == 2:
+    print("Getting info of:",user_input)
+    print("Age: "+str(get_age)+"\nAddress: "+str(get_address)+"\nContact#: "+str(get_contact))
+
+elif menu_input == 3:
     print("Option 3")
 else:
     print("Invalid Option")
