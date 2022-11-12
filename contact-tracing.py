@@ -30,6 +30,15 @@ def main():
         exit()
     else:
         print("Invalid Option")
+    cont()
+
+def cont():
+    print("")
+    continue_prog = input("Do you want to continue? [Y/N]: ").upper()
+    if continue_prog != "Y":
+        exit()
+
+
 
 contact_list = {
     "Jeferson Tadios" : {
@@ -44,8 +53,8 @@ print("Menu:"+
 "\n2 -> Search"+
 "\n3 -> Exit")
 
-
-menu_input = int(input("What do you want to do? "))
-main()
+while True:
+    menu_input = int(input("What do you want to do? "))
+    main()
 
 
