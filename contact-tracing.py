@@ -8,4 +8,11 @@ contact_list = {
         "Contact#" : "01234567890"
         }
 }
-print (contact_list)
+
+get_age = contact_list["Jeferson Tadios"]["Age"]
+get_address = contact_list["Jeferson Tadios"]["Address"]
+get_contact = contact_list["Jeferson Tadios"]["Contact#"]
+
+print (get_age)
+print (get_address)
+print (get_contact)
