@@ -53,7 +53,8 @@ def showMenu():
     print("\n   [1] ➪  Show Saved Contacts"+
         "\n   [2] ➪  Add an Item"+
         "\n   [3] ➪  Search"+
-        "\n   [4] ➪  Exit\n")
+        "\n   [4] ➪  Edit Information"+
+        "\n   [5] ➪  Exit\n")
     print("▁▂▃▄▅▆▇█████████████▇▆▅▄▃▂▁")
 
 
