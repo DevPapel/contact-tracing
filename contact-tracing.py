@@ -50,11 +50,16 @@ def main():
         user_input2 = int(input("\nWhat do you want to edit? "))
         if user_input2 == 1:
             edited_age = input("What is the new age? ")
+            contact_list[user_input1]["Age"] = edited_age
+            print("Age Successfully Edited")
         elif user_input2 == 2:
             edited_address = input("What is the new address? ")
+            contact_list[user_input1]["Address"] = edited_address
+            print("Address Successfully Edited")
         elif user_input2 == 3:
             edited_contact = input("What is the new Contact#? ")
-            
+            contact_list[user_input1]["Contact#"] = edited_contact
+            print("Contact Successfully Edited")
         elif user_input2 == 4:
             print("\nEditing Cancelled")
         else:
