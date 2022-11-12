@@ -22,6 +22,8 @@ def main():
             "Address":user_input3,
             "Contact#":user_input4
         }
+
+
     elif menu_input == 3:
         user_input = input("Enter the Full name: ")
         while contact_list.get(user_input) is None:
@@ -35,18 +37,38 @@ def main():
         print("Age: "+str(get_age)+
         "\nAddress: "+str(get_address)+"\nContact#: "+
         str(get_contact))
+
+
+
     elif menu_input == 4:
         user_input1 = input("Enter the Full name of the information you want to change: ")
         while contact_list.get(user_input1) is None:
             print("\nThere is no information about",user_input1,"Please try again\n")
             user_input1 = input("Enter the Full name of the information you want to change: ")
         print("\nEdit Option"+
-        "\n(1) Age"+"\n(2) Address"+"\n(3) Contact#")
+        "\n(1) Age"+"\n(2) Address"+"\n(3) Contact#"+"\n(4) Cancel Edit")
         user_input2 = int(input("\nWhat do you want to edit? "))
+        if user_input2 == 1:
+            edited_age = input("What is the new age? ")
+        elif user_input2 == 2:
+            edited_address = input("What is the new address? ")
+        elif user_input2 == 3:
+            edited_contact = input("What is the new Contact#? ")
+            
+        elif user_input2 == 4:
+            print("\nEditing Cancelled")
+        else:
+            print("\nWrong Option! Editing Cancelled")
+
+
+
+
 
     elif menu_input == 5:
         print("Thank you for using this program! Have a nice day")
         exit()
+
+
     else:
         print("Invalid Option")
     cont()
