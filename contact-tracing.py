@@ -24,10 +24,14 @@ def main():
         }
     elif menu_input == 3:
         user_input = input("Enter the Full name: ")
+        while contact_list.get(user_input) is None:
+            print("\nGetting info of:",user_input)
+            print("There is no information about this person, Please try again\n")
+            user_input = input("Enter the Full name: ")
         get_age = contact_list[user_input]["Age"]
         get_address = contact_list[user_input]["Address"]
         get_contact = contact_list[user_input]["Contact#"]
-        print("Getting info of:",user_input)
+        print("\nGetting info of:",user_input)
         print("Age: "+str(get_age)+
         "\nAddress: "+str(get_address)+"\nContact#: "+
         str(get_contact))
