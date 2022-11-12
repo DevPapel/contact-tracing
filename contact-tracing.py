@@ -40,6 +40,9 @@ def main():
         while contact_list.get(user_input1) is None:
             print("\nThere is no information about",user_input1,"Please try again\n")
             user_input1 = input("Enter the Full name of the information you want to change: ")
+        print("\nEdit Option"+
+        "\n(1) Age"+"\n(2) Address"+"\n(3) Contact#")
+        user_input2 = int(input("\nWhat do you want to edit? "))
 
     elif menu_input == 5:
         print("Thank you for using this program! Have a nice day")
