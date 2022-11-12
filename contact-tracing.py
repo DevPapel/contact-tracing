@@ -21,4 +21,11 @@ print("Menu:"+
 
 user_input = int(input("What do you want to do? "))
 
-
+if user_input == 1:
+    print("Option 1")
+elif user_input == 2:
+    print("Option 2")
+elif user_input == 3:
+    print("Option 3")
+else:
+    print("Invalid Option")
