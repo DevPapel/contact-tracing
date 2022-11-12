@@ -32,11 +32,6 @@ if menu_input == 1:
         "Contact#":user_input4
     }
     print(contact_list)
-    
-
-
-
-
 elif menu_input == 2:
     user_input = input("Enter the Full name: ")
     get_age = contact_list[user_input]["Age"]
@@ -47,6 +42,7 @@ elif menu_input == 2:
     "\nAddress: "+str(get_address)+"\nContact#: "+
     str(get_contact))
 elif menu_input == 3:
-    print("Option 3")
+    print("Thank you for using this program! Have a nice day")
+    exit()
 else:
     print("Invalid Option")
