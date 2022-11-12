@@ -15,7 +15,6 @@ def main():
             "Address":user_input3,
             "Contact#":user_input4
         }
-        print(contact_list)
     elif menu_input == 2:
         user_input = input("Enter the Full name: ")
         get_age = contact_list[user_input]["Age"]
@@ -39,10 +38,11 @@ def cont():
         exit()
 
 def showMenu():
-    print("Menu:"+
-"\n1 -> Add an Item"+
-"\n2 -> Search"+
-"\n3 -> Exit")
+    print("\n▁▂▃▄▅▆▇█ Main Menu █▇▆▅▄▃▂▁")
+    print("\n   [1] ➪  Add an Item"+
+"\n   [2] ➪  Search"+
+"\n   [3] ➪  Exit\n")
+    print("▁▂▃▄▅▆▇█████████████▇▆▅▄▃▂▁")
 
 
 
@@ -56,10 +56,9 @@ contact_list = {
 }
 
 
-
 while True:
     showMenu()
-    menu_input = int(input("What do you want to do? "))
+    menu_input = int(input("\nWhat do you want to do? "))
     main()
 
 
