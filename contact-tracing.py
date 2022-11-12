@@ -19,10 +19,14 @@ menu_input = int(input("What do you want to do? "))
 
 if menu_input == 1:
     user_input1 = input("Enter the Full name: ")
+    while user_input1 in contact_list:
+        print(user_input1,"is already in the contact list")
+        user_input1 = input("Enter the Full name: ")
+
     user_input2 = input("Enter the Age: ")
     user_input3 = input("Enter the Address: ")
     user_input4 = input("Enter the Contact#: ")
-    print(user_input1, user_input2, user_input3, user_input4)
+    
 
 
 
