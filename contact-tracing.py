@@ -87,8 +87,8 @@ def cont():
 def showMenu():
     print("\n▁▂▃▄▅▆▇█ Main Menu █▇▆▅▄▃▂▁")
     print("\n   [1] ➪  Show Saved Contacts"+
-        "\n   [2] ➪  Add an Item"+
-        "\n   [3] ➪  Search"+
+        "\n   [2] ➪  Add a new contact"+
+        "\n   [3] ➪  Search someone"+
         "\n   [4] ➪  Edit Information"+
         "\n   [5] ➪  Exit\n")
     print("▁▂▃▄▅▆▇█████████████▇▆▅▄▃▂▁")
